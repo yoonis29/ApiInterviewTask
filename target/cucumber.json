@@ -1,0 +1,59 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-11T05:20:40.181Z",
+        "line": 3,
+        "name": "verify roomba patches and final coordinates",
+        "description": "",
+        "id": "roomba-navigation-system;verify-roomba-patches-and-final-coordinates",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2472105200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Users sends POST request to \"roomba.endpoint\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"roomba.endpoint\"",
+                  "offset": 28
+                }
+              ],
+              "location": "RoombaStepDefs.users_sends_POST_request_to(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15780252,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "output should match expected",
+            "match": {
+              "location": "RoombaStepDefs.output_should_match_expected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@roomba"
+          }
+        ]
+      }
+    ],
+    "name": "Roomba Navigation System",
+    "description": "",
+    "id": "roomba-navigation-system",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api/room.feature",
+    "tags": []
+  }
+]
